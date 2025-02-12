@@ -31,7 +31,7 @@ const ContextProvider = ({ children }) => {
         }
         else {
             setPrevPrompt(prev => [...prev, input]);
-            setRecentPrompt(input)
+            setRecentPrompt(input+"?")
             response = await run(input);
         }
         let formattedResponse = response.replace(/\*\*(.*?)\*\*/g, "<b>$1</b>").replace(/\*/g, "<br/>");

@@ -9,14 +9,14 @@ export const Main = () => {
     return (
         <div className="main">
             <div className="nav">
-                <p>Azhu X</p>
+                <p>Gemini</p>
                 <img src={assets.user_icon} alt="User Icon" />
             </div>
             <div className="main-container">
                 {!showResult ? (
                     <>
                         <div className="greet">
-                            <p><span>Hello, Dev</span></p>
+                            <p><span>Hello,Achuthan!</span></p>
                             <p>How can I help you today?</p>
                         </div>
                         <div className="cards">
@@ -64,11 +64,11 @@ export const Main = () => {
                         <div>
                             <img src={assets.gallery_icon} alt="Gallery Icon" />
                             <img src={assets.mic_icon} alt="Mic Icon" />
-                            {input ? <img onClick={() => onSent(input)} src={assets.send_icon} alt="Send Icon" /> : null}
+                            {input ? <img onClick={() => onSent()} src={assets.send_icon} alt="Send Icon" /> : null}
                         </div>
                     </div>
                     <p className="bottom-info">
-                        Azhu X may display inaccurate info, including about people, so double-check its responses.
+                        Gemini may display inaccurate info, including about people, so double-check its responses.
                     </p>
                 </div>
             </div>
